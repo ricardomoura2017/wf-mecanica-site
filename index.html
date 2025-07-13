@@ -35,11 +35,11 @@
     }
     .slogan {
       font-size: 22px;
-      color: #FFD700;
       font-weight: bold;
       margin-top: 70px;
+      color: #ffffff;
+      text-shadow: 0 0 8px #FFD700, 0 0 12px #fff;
       animation: slideInFade 1s ease-out;
-      text-shadow: 1px 1px 2px #000;
     }
     @keyframes slideInFade {
       from { opacity: 0; transform: translateY(-10px); }
@@ -89,6 +89,30 @@
       border-radius: 10px;
     }
     .galeria img.trabalho2 { object-position: top; }
+    .avaliacoes {
+      background-color: #1a1a1a;
+      padding: 30px;
+      margin-top: 40px;
+    }
+    .avaliacoes h2 {
+      color: #FFD700;
+      margin-bottom: 20px;
+    }
+    .avaliacao {
+      margin-bottom: 20px;
+      text-align: left;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      background: #222;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px #FFD70055;
+    }
+    .avaliacao strong {
+      color: #FFD700;
+      font-size: 16px;
+    }
     .contato {
       margin-top: 40px;
     }
@@ -115,55 +139,6 @@
       padding: 15px;
       margin-top: 40px;
     }
-    .avaliacoes {
-      background-color: #1a1a1a;
-      padding: 30px;
-      margin-top: 40px;
-    }
-    .avaliacoes h2 {
-      color: #FFD700;
-      margin-bottom: 20px;
-    }
-    .avaliacao {
-      margin-bottom: 20px;
-      text-align: left;
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
-      background: #222;
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 0 0 5px #FFD70055;
-    }
-    .avaliacao strong {
-      color: #FFD700;
-      font-size: 16px;
-    }
-    form {
-      max-width: 600px;
-      margin: 40px auto;
-      background: #111;
-      padding: 20px;
-      border-radius: 10px;
-    }
-    form input, form textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border: none;
-      border-radius: 5px;
-      font-size: 16px;
-    }
-    form button {
-      background-color: #FFD700;
-      color: #000;
-      padding: 12px 20px;
-      font-size: 18px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
     @media (max-width: 600px) {
       .galeria img {
         width: 100%;
@@ -206,16 +181,6 @@
       <img src="images/trabalho4.webp" alt="Oficina elevador">
     </div>
 
-    <div class="contato">
-      <h2>Entre em contato</h2>
-      <p>📍 Av: Francisco Firmo de Matos, 1001 - Contagem/MG</p>
-      <p>📅 Segunda à Sexta: 08h às 18h | Sábado: 08h às 13h</p>
-      <p>📧 Email: <a href="mailto:warleyfelix@gmail.com" style="color: #FFD700;">warleyfelix@gmail.com</a></p>
-      <a class="whatsapp-button" href="https://wa.me/5531999588238" target="_blank">Fale conosco no WhatsApp</a>
-    </div>
-
-    <iframe src="https://www.google.com/maps?q=Av+Francisco+Firmo+de+Matos+1001,+Contagem,+MG&output=embed" allowfullscreen></iframe>
-
     <div class="avaliacoes">
       <h2>O que nossos clientes dizem:</h2>
 
@@ -243,16 +208,17 @@
         <strong>Diego Barbosa</strong><br />
         "A melhor mecânica"
       </div>
-
     </div>
 
-    <form action="mailto:warleyfelix@gmail.com" method="post" enctype="text/plain">
-      <h2>Envie uma mensagem</h2>
-      <input type="text" name="Nome" placeholder="Seu nome" required />
-      <input type="email" name="Email" placeholder="Seu email" required />
-      <textarea name="Mensagem" rows="5" placeholder="Escreva sua mensagem" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
+    <div class="contato">
+      <h2>Entre em contato</h2>
+      <p>📍 Av: Francisco Firmo de Matos, 1001 - Contagem/MG</p>
+      <p>📅 Segunda à Sexta: 08h às 18h | Sábado: 08h às 13h</p>
+      <p>📧 Email: <a href="mailto:warleyfelix@gmail.com" style="color: #FFD700;">warleyfelix@gmail.com</a></p>
+      <a class="whatsapp-button" href="https://wa.me/5531999588238" target="_blank">Fale conosco no WhatsApp</a>
+    </div>
+
+    <iframe src="https://www.google.com/maps?q=Av+Francisco+Firmo+de+Matos+1001,+Contagem,+MG&output=embed" allowfullscreen></iframe>
   </div>
 
   <footer>
