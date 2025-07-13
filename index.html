@@ -32,22 +32,28 @@
       max-width: 320px;
       display: block;
       margin: 0 auto;
-    }
-    .slogan {
-      font-size: 32px;
-      font-weight: bold;
-      margin-top: -40px;
-      background: linear-gradient(90deg, #ccc, #999, #ddd);
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
-      -webkit-text-fill-color: transparent;
-      animation: brilho 2s ease-in-out infinite;
-    }
-    @keyframes brilho {
-      0% { background-position: 0% }
-      100% { background-position: 100% }
-    }
+      
+ .slogan {
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: -60px;
+  background: linear-gradient(90deg, #fff, #eee, #fff); /* tons claros, quase branco */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: brilho 2s ease-in-out infinite;
+}
+
+@keyframes brilho {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+v
     .destaques {
       background-color: #1a1a1a;
       padding: 20px;
