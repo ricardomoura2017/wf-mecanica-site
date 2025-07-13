@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>WF Mecânica de Autos | Contagem - MG</title>
-  <meta name="description" content="WF Mecânica de Autos: Injeção eletrônica, suspensão, freios, troca de óleo e muito mais em Contagem MG. Qualidade e confiança para seu carro.">
-  <meta name="keywords" content="oficina mecânica Contagem, mecânica automotiva, troca de óleo, injeção eletrônica, correia dentada, suspensão, freios, embreagem, arrefecimento">
-  <meta name="author" content="WF Mecânica de Autos">
+  <meta name="description" content="WF Mecânica de Autos: Injeção eletrônica, suspensão, freios, troca de óleo e muito mais em Contagem MG. Qualidade e confiança para seu carro." />
+  <meta name="keywords" content="oficina mecânica Contagem, mecânica automotiva, troca de óleo, injeção eletrônica, correia dentada, suspensão, freios, embreagem, arrefecimento" />
+  <meta name="author" content="WF Mecânica de Autos" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="WF Mecânica de Autos | Contagem - MG" />
@@ -49,11 +49,80 @@
     .galeria img.trabalho2 { object-position: top; }
     iframe { margin-top: 40px; width: 100%; height: 400px; border: none; }
     footer { background-color: #111; color: #aaa; text-align: center; padding: 15px; margin-top: 40px; }
+
+    /* Estilos para Orçamento e Avaliações */
+    section.orcamento {
+      margin-top: 40px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+      background-color: #111;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    section.orcamento h2 {
+      color: #FFD700;
+      margin-bottom: 15px;
+    }
+    section.orcamento form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      color: #fff;
+    }
+    section.orcamento label {
+      font-weight: bold;
+    }
+    section.orcamento input,
+    section.orcamento textarea {
+      padding: 8px;
+      border-radius: 5px;
+      border: none;
+      font-size: 16px;
+    }
+    section.orcamento button {
+      background-color: #25D366;
+      color: #fff;
+      font-size: 18px;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    section.avaliacoes {
+      margin-top: 50px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      color: #fff;
+      text-align: left;
+    }
+    section.avaliacoes h2 {
+      color: #FFD700;
+      margin-bottom: 20px;
+    }
+    .avaliacao-item {
+      background-color: #222;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      box-shadow: 0 0 5px #FFD700;
+    }
+    .avaliacao-item p.stars {
+      margin: 0 0 8px 0;
+      font-size: 18px;
+      color: #FFD700;
+    }
+    .avaliacao-item p.autor {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
   </style>
 </head>
 <body>
   <header>
-    <img src="images/logo-wf.png" alt="Logo WF Mecânica">
+    <img src="images/logo-wf.png" alt="Logo WF Mecânica" />
     <h1>WF Mecânica de Autos</h1>
     <p class="slogan">O cuidado que seu carro merece!</p>
   </header>
@@ -79,11 +148,94 @@
     </div>
 
     <div class="galeria">
-      <img src="images/trabalho1.webp" alt="Mecânico em serviço">
-      <img src="images/trabalho2.webp" alt="Revisão automotiva" class="trabalho2">
-      <img src="images/trabalho3.webp" alt="Motor desmontado">
-      <img src="images/trabalho4.webp" alt="Oficina elevador">
+      <img src="images/trabalho1.webp" alt="Mecânico em serviço" />
+      <img src="images/trabalho2.webp" alt="Revisão automotiva" class="trabalho2" />
+      <img src="images/trabalho3.webp" alt="Motor desmontado" />
+      <img src="images/trabalho4.webp" alt="Oficina elevador" />
     </div>
+
+    <!-- Seção Orçamento Rápido -->
+    <section class="orcamento">
+      <h2>Solicite um Orçamento Rápido</h2>
+      <form id="form-orcamento">
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome" required placeholder="Seu nome" />
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required placeholder="(31) 99999-9999" />
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required placeholder="Digite sua mensagem"></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+      <p id="resposta"></p>
+    </section>
+
+    <!-- Seção Avaliações -->
+    <section class="avaliacoes">
+      <h2>O que dizem nossos clientes</h2>
+
+      <div class="avaliacao-item">
+        <p class="stars">⭐️⭐️⭐️⭐️⭐️</p>
+        <p class="autor">Bianca Xavier</p>
+        <p>Gostaria de enaltecer o ótimo profissionalismo da WF Mecânica. Após uma grande frustração de serviço mal prestado com outro prestador, me atendeu com muita agilidade e respeito à minha urgência. Super indico o trabalho e sou muito grata Warley.</p>
+      </div>
+
+      <div class="avaliacao-item">
+        <p class="stars">⭐️⭐️⭐️⭐️⭐️</p>
+        <p class="autor">Sirbele Alves</p>
+        <p>Muito bom serviço e excelente atendimento. Pessoal atencioso, fez uma avaliação completa do carro e explica tudo de forma clara e precisa. Fiz troca de óleo e Paraflu.</p>
+      </div>
+
+      <div class="avaliacao-item">
+        <p class="stars">⭐️⭐️⭐️⭐️⭐️</p>
+        <p class="autor">Warley Félix</p>
+        <p>O pessoal é bacana, humilde e presto a te servir da melhor maneira possível. Aguardo o seu contato.</p>
+      </div>
+
+      <div class="avaliacao-item">
+        <p class="stars">⭐️⭐️⭐️⭐️⭐️</p>
+        <p class="autor">Gleidison Rodrigues</p>
+        <p>Muito prestativo, demonstrou muita confiança. Preço justo e entregou no prazo combinado.</p>
+      </div>
+
+      <div class="avaliacao-item">
+        <p class="stars">⭐️⭐️⭐️⭐️⭐️</p>
+        <p class="autor">Jefte Felix</p>
+        <p>Excelente!!!! Pessoas de responsabilidade e transmitem confiança.</p>
+      </div>
+
+      <div class="avaliacao-item">
+        <p class="stars">⭐️⭐️⭐️⭐️⭐️</p>
+        <p class="autor">Ana Carolina Gomes</p>
+        <p>Maravilhosa !! Atendimento ótimo 👍🏻</p>
+      </div>
+
+      <div class="avaliacao-item">
+        <p class="stars">⭐️⭐️⭐️⭐️</p>
+        <p class="autor">Helton Bispo</p>
+        <p>Oficina pequena e simples mas com mecânicos sérios.</p>
+      </div>
+
+      <div class="avaliacao-item">
+        <p class="stars">⭐️⭐️⭐️⭐️⭐️</p>
+        <p class="autor">Nadia Iwasaki</p>
+        <p>Aqui o problema é resolvido. Excelentes profissionais.</p>
+      </div>
+
+      <div class="avaliacao-item">
+        <p class="stars">⭐️⭐️⭐️⭐️⭐️</p>
+        <p class="autor">Diego Barbosa</p>
+        <p>A melhor mecânica.</p>
+      </div>
+
+      <div class="avaliacao-item">
+        <p class="stars">⭐️⭐️⭐️⭐️⭐️</p>
+        <p class="autor">Helbert Cristian</p>
+        <p>Ótimo trabalho.</p>
+      </div>
+    </section>
 
     <div class="contato">
       <h2>Entre em contato</h2>
@@ -93,12 +245,29 @@
       <a class="whatsapp-button" href="https://wa.me/5531999588238" target="_blank">Fale conosco no WhatsApp</a>
     </div>
 
-    <iframe src="https://www.google.com/maps?q=Av+Francisco+Firmo+de+Matos+1001,+Contagem,+MG&output=embed" allowfullscreen></iframe>
+    <iframe
+      src="https://www.google.com/maps?q=Av+Francisco+Firmo+de+Matos+1001,+Contagem,+MG&output=embed"
+      allowfullscreen
+    ></iframe>
   </div>
 
   <footer>
     <p>&copy; 2025 WF Mecânica de Autos. Todos os direitos reservados.</p>
-    <p>Instagram: <a href="https://www.instagram.com/wfmecanicadeautos2024" target="_blank" style="color:#FFD700">@wfmecanicadeautos2024</a></p>
+    <p>
+      Instagram:
+      <a href="https://www.instagram.com/wfmecanicadeautos2024" target="_blank" style="color: #FFD700"
+        >@wfmecanicadeautos2024</a
+      >
+    </p>
   </footer>
+
+  <script>
+    // Simples ação para o formulário (não envia, só simula)
+    document.getElementById('form-orcamento').addEventListener('submit', function (e) {
+      e.preventDefault();
+      document.getElementById('resposta').textContent = 'Obrigado pelo contato! Entraremos em breve.';
+      this.reset();
+    });
+  </script>
 </body>
 </html>
