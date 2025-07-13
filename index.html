@@ -3,17 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>WF Mecânica de Autos | Contagem - MG</title>
-  <meta name="description" content="WF Mecânica de Autos: Injeção eletrônica, suspensão, freios, troca de óleo e muito mais em Contagem MG. Qualidade e confiança para seu carro." />
-  <meta name="keywords" content="oficina mecânica Contagem, mecânica automotiva, troca de óleo, injeção eletrônica, correia dentada, suspensão, freios, embreagem, arrefecimento" />
-  <meta name="author" content="WF Mecânica de Autos" />
+  <meta name="description" content="WF Mecânica de Autos: Injeção eletrônica, suspensão, freios, troca de óleo e muito mais em Contagem MG. Qualidade e confiança para seu carro.">
+  <meta name="keywords" content="oficina mecânica Contagem, mecânica automotiva, troca de óleo, injeção eletrônica, correia dentada, suspensão, freios, embreagem, arrefecimento">
+  <meta name="author" content="WF Mecânica de Autos">
 
-  <!-- Open Graph -->
+  <!-- SEO Open Graph -->
   <meta property="og:title" content="WF Mecânica de Autos | Contagem - MG" />
   <meta property="og:description" content="Injeção eletrônica, suspensão, freios, troca de óleo e muito mais em Contagem MG. Qualidade e confiança para seu carro." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.wfmecanica.com.br" />
+  <meta property="og:url" content="https://ricardomoura2017.github.io/wf-mecanica-site/" />
   <meta property="og:image" content="https://ricardomoura2017.github.io/wf-mecanica-site/images/logo-wf.png" />
 
   <style>
@@ -26,29 +25,32 @@
     }
     header {
       background-color: #111;
-      padding: 10px 20px 10px 20px;
+      padding: 20px 10px 10px;
       text-align: center;
     }
     header img {
-      max-width: 300px;
-      background-color: transparent;
+      max-width: 320px;
       display: block;
       margin: 0 auto;
     }
     .slogan {
       font-size: 22px;
-      color: #fdd835;
-      margin-top: 10px;
+      color: #FFD700;
       font-weight: bold;
+      margin-top: -10px;
+      animation: slideInFade 1s ease-out;
+      text-shadow: 1px 1px 2px #000;
+    }
+    @keyframes slideInFade {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
     }
     .destaques {
       background-color: #1a1a1a;
       padding: 20px;
       text-align: center;
     }
-    .destaques h2 {
-      color: #FFD700;
-    }
+    .destaques h2 { color: #FFD700; }
     .destaques p {
       font-size: 18px;
       margin: 10px auto;
@@ -72,16 +74,6 @@
     .servicos li {
       margin: 10px 0;
     }
-    .whatsapp-button {
-      background-color: #25D366;
-      color: white;
-      padding: 15px 25px;
-      font-size: 20px;
-      border: none;
-      border-radius: 5px;
-      text-decoration: none;
-      display: inline-block;
-    }
     .galeria {
       display: flex;
       justify-content: center;
@@ -96,29 +88,19 @@
       border: 3px solid #FFD700;
       border-radius: 10px;
     }
-    .galeria img.trabalho2 {
-      object-position: top;
+    .galeria img.trabalho2 { object-position: top; }
+    .contato {
+      margin-top: 40px;
     }
-    .avaliacoes {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 20px;
-      background-color: #111;
-      border-radius: 10px;
-    }
-    .avaliacoes h2 {
-      color: #FFD700;
-      margin-bottom: 20px;
-    }
-    .avaliacao {
-      background-color: #1a1a1a;
-      padding: 15px;
-      margin-bottom: 15px;
-      border-radius: 8px;
-      text-align: left;
-    }
-    .avaliacao strong {
-      color: #fdd835;
+    .whatsapp-button {
+      background-color: #25D366;
+      color: white;
+      padding: 15px 25px;
+      font-size: 20px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
     }
     iframe {
       margin-top: 40px;
@@ -133,17 +115,67 @@
       padding: 15px;
       margin-top: 40px;
     }
+    .avaliacoes {
+      background-color: #1a1a1a;
+      padding: 30px;
+      margin-top: 40px;
+    }
+    .avaliacoes h2 {
+      color: #FFD700;
+      margin-bottom: 20px;
+    }
+    .avaliacao {
+      margin-bottom: 20px;
+      text-align: left;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      background: #222;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px #FFD70055;
+    }
+    .avaliacao strong {
+      color: #FFD700;
+      font-size: 16px;
+    }
+    form {
+      max-width: 600px;
+      margin: 40px auto;
+      background: #111;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    form button {
+      background-color: #FFD700;
+      color: #000;
+      padding: 12px 20px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
     @media (max-width: 600px) {
       .galeria img {
-        width: 90%;
+        width: 100%;
         height: auto;
       }
     }
   </style>
 </head>
 <body>
+
   <header>
-    <img src="images/logo-wf.png" alt="Logo WF Mecânica" />
+    <img src="images/logo-wf.png" alt="Logo WF Mecânica">
     <p class="slogan">O cuidado que seu carro merece!</p>
   </header>
 
@@ -168,23 +200,10 @@
     </div>
 
     <div class="galeria">
-      <img src="images/trabalho1.webp" alt="Mecânico em serviço" />
-      <img src="images/trabalho2.webp" alt="Revisão automotiva" class="trabalho2" />
-      <img src="images/trabalho3.webp" alt="Motor desmontado" />
-      <img src="images/trabalho4.webp" alt="Oficina elevador" />
-    </div>
-
-    <div class="avaliacoes">
-      <h2>O que nossos clientes dizem</h2>
-      <div class="avaliacao"><strong>Bianca Xavier:</strong> Gostaria de enaltecer o ótimo profissionalismo da WF Mecânica. Após uma grande frustração com outro prestador, me atenderam com muita agilidade e respeito. Super indico!</div>
-      <div class="avaliacao"><strong>Sirbele Alves:</strong> Muito bom serviço e excelente atendimento. Pessoal atencioso, fez uma avaliação completa e explicou tudo de forma clara.</div>
-      <div class="avaliacao"><strong>Gleidison Rodrigues:</strong> Muito prestativo, demonstrou muita confiança. Preço justo e entregou no prazo combinado.</div>
-      <div class="avaliacao"><strong>Jefte Felix:</strong> Excelente!!!! Pessoas de responsabilidade e transmitem confiança.</div>
-      <div class="avaliacao"><strong>Ana Carolina Gomes:</strong> Maravilhosa !! Atendimento ótimo 👍🏻</div>
-      <div class="avaliacao"><strong>Helton Bispo:</strong> Oficina pequena e simples mas com mecânicos sérios.</div>
-      <div class="avaliacao"><strong>Nadia Iwasaki:</strong> Aqui o problema é resolvido. Excelentes profissionais.</div>
-      <div class="avaliacao"><strong>Diego Barbosa:</strong> A melhor mecânica.</div>
-      <div class="avaliacao"><strong>HELBERT CRISTIAN:</strong> Ótimo trabalho.</div>
+      <img src="images/trabalho1.webp" alt="Mecânico em serviço">
+      <img src="images/trabalho2.webp" alt="Revisão automotiva" class="trabalho2">
+      <img src="images/trabalho3.webp" alt="Motor desmontado">
+      <img src="images/trabalho4.webp" alt="Oficina elevador">
     </div>
 
     <div class="contato">
@@ -196,11 +215,50 @@
     </div>
 
     <iframe src="https://www.google.com/maps?q=Av+Francisco+Firmo+de+Matos+1001,+Contagem,+MG&output=embed" allowfullscreen></iframe>
+
+    <div class="avaliacoes">
+      <h2>O que nossos clientes dizem:</h2>
+
+      <div class="avaliacao">
+        <strong>Bianca Xavier</strong><br />
+        "Gostaria de inautecer o ótimo profissionalismo da WF Mecânica. Me atendeu com muita agilidade e respeito. Super indico!"
+      </div>
+
+      <div class="avaliacao">
+        <strong>Sirbele Alves</strong><br />
+        "Muito bom serviço e excelente atendimento. Pessoal atencioso, fez uma avaliação completa do carro."
+      </div>
+
+      <div class="avaliacao">
+        <strong>Gleidison Rodrigues</strong><br />
+        "Muito prestativo, demonstrou muita confiança. Preço justo e entregou no prazo combinado."
+      </div>
+
+      <div class="avaliacao">
+        <strong>Ana Carolina Gomes</strong><br />
+        "Maravilhosa !! Atendimento ótimo 👍🏻"
+      </div>
+
+      <div class="avaliacao">
+        <strong>Diego Barbosa</strong><br />
+        "A melhor mecânica"
+      </div>
+
+    </div>
+
+    <form action="mailto:warleyfelix@gmail.com" method="post" enctype="text/plain">
+      <h2>Envie uma mensagem</h2>
+      <input type="text" name="Nome" placeholder="Seu nome" required />
+      <input type="email" name="Email" placeholder="Seu email" required />
+      <textarea name="Mensagem" rows="5" placeholder="Escreva sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
   </div>
 
   <footer>
     <p>&copy; 2025 WF Mecânica de Autos. Todos os direitos reservados.</p>
     <p>Instagram: <a href="https://www.instagram.com/wfmecanicadeautos2024" target="_blank" style="color:#FFD700">@wfmecanicadeautos2024</a></p>
   </footer>
+
 </body>
 </html>
